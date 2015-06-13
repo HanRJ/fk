@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>金融炼金术 个人中心 我的收藏</title>
+    <link href="__PUBLIC__/V1/css/global.css" rel="stylesheet" media="screen" />
+    <link href="__PUBLIC__/V1/css/space.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+    <include file='Public/header' />
+    <!-- 内容 start -->
+    <div class="main_content">
+        <div class="wrap clear">
+            <include file='Public/centerSide' />
+
+            <!-- 右边 start -->
+            <div class="main">
+                <div class="mod_detail">
+                    <div class="detail_collect">
+                        <div class="mod_title">
+                            <h3>我的收藏</h3>
+                        </div>
+
+                        <if condition="$_total eq 0 ">
+                            <div class="mod_empty">
+                                <div class="ico_warn"></div>
+                                <p class="tip_cnt">当前收藏为空，您可以逛逛热门主题哈！</p>
+                                <p><a href="{:U('Topic/list')}" class="btn btn_red">去看看</a></p>
+                            </div>
+                        <else/>
+                        <table class="mod_table">
+                            <thead>
+                            <tr>
+                                <th class="col_theme">主题策略（股票） </th>
+                                <th class="col_publisher">发布者</th>
+                                <th class="col_date">收藏日期</th>
+                                <th class="col_fund">配置资金</th>
+                                <th class="col_profit">跟投人气</th>
+                                <th class="col_handle">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="collects" item="citem">
+                                <tr data-tid="{$citem.topic_id}" data-cid="{$citem.id}" data-goldprice="{$citem.gold_price|default=0}" class="topic_tr">
+                                    <td>
+                                        <p><a href="{:U('Topic/index', array(id=>$citem['topic_id']))}" target="_blank">{$citem.title}</a></p>
+                                    </td>
+                                    <td>{$citem.author_nick|default='炼金大师'}</td>
+                                    <td>{$citem.add_time|date='Y-m-d',###}</td>
+                                    <td>1万元 <span class="rate">（<strong>/58%</strong>）</span></td>
+                                    <td>6万人</td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="btn btn_gray_2">加入购物车</a>
+                                        <a href="javascript:void(0)" class="btn btn_red">买入</a>
+                                        <a href="javascript:void(0)" class="btn btn_delete">卖出</a>
+                                    </td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                        <div class="mod_page">
+                            {$_page}
+                        </div>
+                        </if>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边 end -->
+        </div>
+    </div>
+    <!-- 内容 end -->
+
+    <include file='Public/footer' />
+    <script type="text/javascript" src="__PUBLIC__/V1/js/center/collect.js"></script>
+</body>
+</html>

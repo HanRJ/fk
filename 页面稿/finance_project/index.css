@@ -1,0 +1,1076 @@
+@charset "UTF-8";
+
+.wrap
+{
+	width:995px;
+	margin: 0 auto;
+}
+/*广告 start*/
+.mod_ad
+{
+	background:#eff2f9;
+}
+.mod_ad .wrap
+{
+	position: relative;
+}
+.mod_ad .wrap .ico
+{
+	position: absolute;
+	width: 16px;
+	height: 29px;
+	background:url("image/sprite_index.32.png");
+	background-repeat: no-repeat;
+}
+.mod_ad .wrap .ico_left
+{
+	background-position: -40px -240px;
+	top:120px;
+	left: -40px;
+}
+.mod_ad .wrap .ico_right
+{
+	background-position: -60px -240px;
+	top:120px;
+	right: -40px;
+}
+.mod_ad .wrap .ico_left_disable
+{
+	background-position: 0 -240px;
+}
+.mod_ad .wrap .ico_right_disable
+{
+	background-position: -20px -240px;
+}
+.mod_ad .wrap .ico_left_disable:hover, .mod_ad .wrap .ico_right_disable:hover
+{
+	cursor: default;
+}
+.mod_ad .ad_list
+{
+	padding: 20px 0;
+	height: 208px;
+}
+.mod_ad .ad_list .ad_item
+{
+	width: 49%;
+	vertical-align: top;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	float: left;
+}
+.mod_ad .ad_list .right_item
+{
+	float: right;
+}
+.mod_ad .ad_list .ad_item .ad_img
+{
+	float: left;
+	position: relative;
+}
+.mod_ad .ad_list .ad_item .ad_img .label
+{
+	position: absolute;
+	width: 96px;
+	height: 34px;
+	background:url("image/sprite_index.32.png") -60px -120px no-repeat;
+	font-size: 14px;
+	color: #fff;
+	line-height: 26px;
+	/*font-family: "simsun";*/
+	text-indent: 10px;
+	top:11px;
+	left: -10px;
+}
+.mod_ad .ad_list .ad_item .ad_img, .mod_ad .ad_list .ad_item .ad_img img
+{
+	width: 207px;
+	height: 208px;
+}
+.mod_ad .ad_list .ad_item .ad_img .title_text
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 53px;
+	background-color: #474e5d;
+	opacity: 0.8;
+	width: 100%;
+}
+.mod_ad .ad_list .ad_item .ad_img .title_text .text
+{
+	color: #fff;
+	line-height: 53px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+.mod_ad .ad_list .ad_item .ad_img .title_text .profit
+{
+	float: right;
+	margin-right: 10px;
+	line-height: 53px;
+	color: #ea544a;
+	font-size: 12px;
+}
+.mod_ad .ad_list .ad_item .ad_img .title_text .profit i
+{
+	font-size: 24px;
+	font-style: normal;
+}
+.mod_ad .ad_list .ad_item .ad_text
+{
+	height: 188px;
+	background-color: #474e5e;
+	padding: 10px 10px;
+	margin-left: 207px;
+	position: relative;
+	width: 260px;
+}
+.mod_ad .ad_list .ad_item .ad_text p
+{
+	font-size: 12px;
+	color: #9ca6b0;
+	/*font-family: "simsun";*/
+	line-height: 22px;
+}
+.mod_ad .ad_list .ad_item .ad_text .op_action
+{
+	width: 263px;
+	height: 67px;
+	background:url("image/sprite_index.32.png") 0 -40px no-repeat;
+	position: absolute;
+	bottom: 35px;
+	right: 0;
+}
+.mod_ad .ad_item .ad_text .op_action .price
+{
+	color: #fff;
+	font-size: 44px;
+	margin-left: 17px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+.mod_ad .ad_item .ad_text .op_action .price .unit
+{
+	font-size: 16px;
+}
+.mod_ad .ad_item .ad_text .op_action .old_price
+{
+	display: inline-block;
+	margin-left: 10px;
+	width: 60px;
+	*display: inline;
+	zoom: 1;
+}
+.mod_ad .ad_item .ad_text .op_action .old_price .label
+{
+	float: left;
+	width: 60px;
+	height: 18px;
+	background:url("image/sprite_index.32.png") 0 -200px no-repeat;
+	line-height: 18px;
+	font-size: 12px;
+	/*font-family: "simsun";*/
+	color: #d48231;
+	text-indent: 8px;
+}
+.mod_ad .ad_item .ad_text .op_action .old_price .num
+{
+	float: left;
+	color: #999;
+	font-size: 12px;
+	text-decoration: line-through;
+	top: 5px;
+	position: relative;
+}
+.mod_ad .ad_item .ad_text .op_action .ico_cart
+{
+	background:url("image/sprite_index.32.png") -80px -200px no-repeat;
+	width: 21px;
+	height: 17px;
+	display: inline-block;
+	position: relative;
+	top:-5px;
+	*display: inline;
+	zoom: 1;
+}
+.mod_ad .ad_item .ad_text .op_action .btn_yellow
+{
+	display: inline-block;
+	padding: 0 12px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 16px;
+	color: #ea534a;
+	position: absolute;
+	top:17px;
+	right: 10px;
+	background:#feffff;
+}
+.mod_ad .ad_item .ad_text .op_action .btn_yellow:hover
+{
+	background: #fcd82c;	
+}
+.mod_ad .ad_item .ad_text .people 
+{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: #999;
+}
+.mod_ad .ad_item .ad_text .people .people_num
+{
+	color: #ea534a;
+}
+/*广告 end*/
+/*side_nav start*/
+.mod_activities .side_nav
+{
+	position: absolute;
+	width: 160px;
+	top:100px;
+}
+.mod_activities .side_nav ul
+{
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+}
+.mod_activities .side_nav li
+{
+	height: 35px;
+	line-height: 35px;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #efefef;
+	text-align: center;
+}
+.mod_activities .side_nav li a
+{
+	color: #333;
+	font-size: 16px;
+	border-bottom: 1px solid #efefef;
+	display: inline-block;
+	width: 120px;
+	height: 35px;
+	margin: 0 auto;
+}
+.mod_activities .side_nav_last a
+{
+	border: none;
+}
+.mod_activities .side_nav .side_nav_item_selected a
+{
+	color: #fff;
+	border: none;
+}
+.mod_activities .side_nav .side_nav_item_selected
+{
+	background: url("image/sprite_index.32.png") 0 -160px no-repeat;
+	width: 160px;
+	height: 34px;
+	border:none;
+}
+.mod_activities li.side_nav_last
+{
+	height: 42px;
+	line-height: 42px;
+}
+.mod_activities .side_nav .btn_care
+{
+	border: 1px solid #ffaa19;
+	border-radius: 3px;
+	color: #343434;
+	font-size: 12px;
+	/*font-family: "simsun";*/
+	line-height: 24px;
+	height: 24px;
+	width: 74px;
+}
+.mod_activities .side_nav .btn_care:hover
+{
+	color: #fff;
+	background: #ffaa1b;
+}
+.mod_activities .side_nav .btn_care i
+{
+	font-style: normal;
+	margin-right: 10px;
+}
+.mod_activities .side_nav .mod_side .title
+{
+	font-size: 16px;
+	padding-left: 10px;
+	border-left: 2px solid #eb544d;
+	color: #333;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.mod_activities .side_nav .mod_side .topics a
+{
+	display: inline-block;
+	width: 45px;
+	height: 20px;
+	background: #eff4f8;
+	color: #333230;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+.mod_activities .side_nav .media a img
+{
+	margin-bottom: 5px;
+}
+.mod_activities .side_nav .media .media_text
+{
+	color: #999;
+	margin-bottom: 15px;
+}
+/*side_nav end*/
+/*最新动态 小赢家训练营 start */
+.mod_activities .wrap
+{
+	position: relative;
+}
+.mod_activities .mod_title 
+{
+	border-bottom: 3px solid #474e5e;
+	position: relative;
+	height: 50px;
+}
+.mod_activities .mod_title .title_text
+{
+	font-size: 18px;
+	color: #333;
+	line-height: 50px;
+}
+.mod_activities .mod_title .line
+{
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 180px;
+	height: 7px;
+	background:url("image/sprite_index.32.png") 0 -220px no-repeat;
+}
+.mod_activities .content
+{
+	margin-left: 190px;
+}
+.mod_activities .content .content_main
+{
+	width: 530px;
+	margin-top: 5px;
+}
+.mod_activities .content .content_main .news_slide 
+{
+	padding: 15px 0;
+	border-bottom: 1px dashed #e4e4e4;
+}
+.mod_activities .content .content_main .last
+{
+	border-bottom: none;
+}
+.mod_activities .content .content_main .news_slide img
+{
+	float: left;
+}
+.mod_activities .content .content_main .news_slide .news_content
+{
+	margin-left: 40px;
+	/*font-family: "simsun";*/
+}
+.mod_activities .news_slide .news_content .name
+{
+	line-height: 33px;
+	color: #333;
+}
+.mod_activities .news_slide .news_content .name_title
+{
+	margin-left: 70px;
+	color: #858585;
+}
+.mod_activities .news_slide .news_content .time
+{
+	color: #bfbfbf;
+	float: right;
+	padding-right: 10px;
+}
+.mod_activities .news_slide .news_content .news_title
+{
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.mod_activities .news_slide .news_content .news_title em
+{
+	color: #ea544b;
+	font-size: 16px;	
+}
+.mod_activities .news_slide .news_content .news_text
+{
+	color: #666;
+	margin-bottom: 10px;
+	line-height: 24px;
+}
+.mod_activities .news_slide .news_content .news_feed 
+{
+	overflow: hidden;
+}
+.mod_activities .news_slide .news_content .news_feed .label
+{
+	padding: 0 5px;
+	height: 18px;
+	line-height: 18px;
+	color: #fff;
+	background: #f9c74a;
+	display: inline-block;
+	border-radius: 3px;
+	margin-right: 5px;
+}
+.mod_activities .news_slide .news_content .news_feed ul
+{
+	float: right;
+}
+.mod_activities .news_slide .news_content .news_feed ul li
+{
+	float: left;
+}
+.mod_activities .news_slide .news_content .news_feed ul li a
+{
+	padding: 0 15px;
+	color: #8f8f8f;
+}
+.mod_activities .news_slide .news_content .news_feed ul li .ico
+{
+	display: inline-block;
+	background:url("image/sprite_index.32.png") -180px -120px no-repeat;
+	margin-right: 5px;
+	position: relative;
+	top:2px;
+}
+.mod_activities .news_slide .news_content .news_feed ul li .ico_praise
+{
+	width: 13px;
+	height: 14px;
+	background-position: -180px -120px;	
+}
+.mod_activities .news_slide .news_content .news_feed ul li .ico_comment
+{
+	width: 14px;
+	height: 14px;
+	background-position: -160px -120px;	
+}
+.mod_activities .news_slide .news_content .news_feed ul li .ico_disagree
+{
+	width: 13px;
+	height: 14px;
+	background-position: -200px -120px;	
+}
+.mod_activities .news_slide .news_content .news_feed ul li .ico_share
+{
+	width: 10px;
+	height: 14px;
+	background-position: -220px -120px;	
+}
+/*评论内部*/
+.mod_activities .content .content_main .comment_list
+{
+	background: #f9f9f9;
+	border:1px solid #ebebeb;
+	padding: 0px 15px;
+	margin-top: 10px;
+	position: relative;
+}
+.mod_activities .content .content_main .comment_list .trangle_outer 
+{
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 10px;
+	border-color: transparent transparent #ebebeb transparent;
+	border-style: solid dashed dashed;
+	top: -20px;
+	left: 370px;
+}
+.mod_activities .content .content_main .comment_list .trangle_inner 
+{
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 10px;
+	border-color: transparent transparent #f9f9f9 transparent;
+	border-style: solid dashed dashed;
+	top: -9px;
+	left: -10px;
+}
+.mod_activities .content .content_main .news_side_last
+{
+	border-bottom: none;	
+} 
+.mod_activities .content .op_more
+{
+	background: #fcfcfc;
+	border:1px solid #e5e5e5;
+	text-align: center;
+}
+.mod_activities .content .op_more a
+{
+	color: #333;
+	display: block;
+	padding: 7px 0;
+}
+.mod_activities .content .op_more a .ico_tr_down
+{
+	width: 7px;
+	height: 4px;
+	background: url("image/sprite_index.32.png") -160px -160px no-repeat;
+	margin-left: 10px;
+	position: relative;
+	top:-2px;
+}
+.mod_activities .content .content_right
+{
+	float: right;
+	width: 235px;
+}
+.mod_activities .content .content_right .rank_item .rank_title
+{
+	height: 45px;
+	border-bottom: 1px solid #e0e0e0;
+	position: relative;
+	font-size: 16px;
+	color: #333;
+	line-height: 50px;
+}
+.mod_activities .content .content_right .rank_item .rank_title .ico_price
+{
+	width: 26px;
+	height: 33px;
+	background:url("image/sprite_index.32.png") -200px -140px no-repeat;
+	position: relative;
+	top:10px;
+	margin-right: 10px;
+}
+.mod_activities .content .content_right .rank_item .label
+{
+	position: absolute;
+	bottom: 0px;
+	left: 100px;
+	width: 63px;
+	height: 5px;
+	background:url("image/sprite_index.32.png") -80px -240px no-repeat;
+}
+.mod_activities .content .content_right .rank_item .rank
+{
+	color: #ea544b;
+}
+.mod_activities .content .content_right .rank_item .rank_name
+{
+	padding: 10px 0;
+}
+.mod_activities .content .content_right .rank_item .rank_name img
+{
+	float: left;
+}
+.mod_activities .content_right .rank_item .rank_name .name_info
+{
+	margin-left: 55px;
+}
+.mod_activities .content_right .rank_item .rank_name .name_info .name
+{
+	color: #333;
+	/* font-family: "simsun"; */
+	line-height: 20px;
+}
+.mod_activities .content_right .rank_item .rank_name .name_info .name_title
+{
+	color: #858585;
+	/*font-family: "simsun";*/
+}
+.mod_activities .content_right .rank_item .rank_content
+{
+	background: #eff4f8;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+}
+.mod_activities .content_right .rank_item .rank_content .category
+{
+	line-height: 25px;
+}
+.mod_activities .content_right .rank_item .rank_content .num
+{
+	text-align: right;
+	float: right;
+	color: #b4b4b4;
+}
+.mod_activities .content_right .rank_item .rank_content .num i
+{
+	font-style: normal;
+	color: #ea544b;
+}
+.mod_activities .content_right .top_rank .top_rank_title
+{
+	width: 230px;
+	height: 34px;
+	background:url("image/sprite_index.32.png") 0 0 no-repeat;
+	color: #fff;
+	line-height: 34px;
+}
+.mod_activities .content_right .top_rank .top_rank_title .text_1
+{
+	font-size: 18px;
+	margin: 0 30px 0 9px;
+}
+.mod_activities .content_right .top_rank .top_rank_title .text_2
+{
+	font-size: 16px;
+}
+.mod_activities .content_right .top_rank .top_rank_bar 
+{
+	height: 45px;
+}
+.mod_activities .content_right .top_rank .top_rank_bar li
+{
+	*display: inline;
+	zoom: 1;
+}
+.mod_activities .content_right .top_rank .top_rank_bar .bar_link
+{
+	padding: 0 10px;
+	border-right: 1px solid #aeaeae;
+	color: #666;
+	float: left;
+	margin: 10px auto;
+}
+.mod_activities .content_right .top_rank .top_rank_bar .last
+{
+	border-right: none;
+}
+.mod_activities .content_right .top_rank .top_item .label
+{
+	display: inline-block;
+	width: 14px;
+	height: 19px;
+	background:url("image/sprite_index.32.png") -180px -140px no-repeat;
+	text-align: center;
+	color: #fff;
+	float: left;
+	margin-top: 18px;
+	*display: inline;
+	zoom: 1;
+}
+.mod_activities .content_right .top_rank .top_item .label_2
+{
+	display: inline-block;
+	width: 14px;
+	height: 19px;
+	background:url("image/sprite_index.32.png") -160px -140px no-repeat;
+	text-align: center;
+	color: #fff;
+	float: left;
+	margin-top: 18px;
+	*display: inline;
+	zoom: 1;
+}
+.mod_activities .content_right .top_rank .top_item
+{
+	border-bottom: 1px dashed #e3e3e3; 
+}
+.mod_activities .content_right .top_rank .last_item
+{
+	border: none;
+}
+.mod_activities .content_right .top_rank .top_item .top_item_info
+{
+	margin-left: 30px;
+	padding: 8px 0;
+}
+.mod_activities .content_right .top_rank .top_item .top_item_info .avatar
+{
+	display: inline-block;
+	text-align: center;
+	width: 60px;
+	color: #333;
+	*display: inline;
+	zoom: 1;
+}
+.mod_activities .content_right .top_rank .top_item_info .avatar .name
+{
+	width: 60px;
+}
+.mod_activities .content_right .top_rank .top_item .top_item_info .ct
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+	color: #666;
+	font-size: 12px;
+	/* font-family: "simsun"; */
+	width: 115px;
+	position: relative;
+	*display: inline;
+	zoom: 1;
+}
+.mod_activities .content_right .top_rank .top_item_info .pt
+{
+	color: #ea544b;
+	font-size: 14px;
+	float: right;
+	position: relative;
+	top:-3px;
+}
+.mod_activities .mod_title .btn_red
+{
+	width: 230px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 16px;
+	margin-left: 15px;
+}
+/*小赢家训练营*/
+.mod_activities .train_content_main .content_right .top_rank_item
+{
+	margin-top: 10px;
+}
+.mod_activities .train_content_main .content_right .top_rank_item ul
+{
+	overflow: hidden;
+}
+.mod_activities .train_content_main .content_right .top_rank_item .bar_item
+{
+	padding: 0 8.7px;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #e4e4e4;
+	color: #676767;
+	float: left;
+	margin-left: -1px;
+	font-size: 12px;
+	/* font-family: "simsun"; */
+}
+.mod_activities .train_content_main .content_right .top_rank_item .bar_item_first
+{
+	margin-left: 0;
+}
+.mod_activities .train_content_main .content_right .top_rank_item .bar_selected
+{
+	position: relative;
+	border: 1px solid #eb544b;
+}
+.mod_activities .train_content_main
+{
+    margin-left: 0;
+    padding-bottom: 110px;
+}
+.mod_activities .train_content_main .content_main
+{
+    width: 730px;
+}
+.mod_activities .content_title
+{
+	margin-top: 20px;
+	height: 45px;
+	background: #eb544b;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 8px;
+}
+.mod_activities .content_title i
+{
+    display: inline-block;
+    width: 40px;
+    height: 29px;
+    background: url("image/sprite_index.32.png") 0 -120px no-repeat;
+    margin-left: 10px;
+    position: relative;
+    top:10px;
+}
+.mod_activities .content_title .tab_list
+{
+    display: inline-block;
+    vertical-align: bottom;
+    *display: inline;
+	zoom: 1;
+}
+.mod_activities .content_title .tab_list li
+{
+    float: left;
+}
+.mod_activities .content_title .tab_list li .tab
+{
+    padding: 10px 15px 15px 15px;
+    color: #fff;
+    font-size: 12px;
+    display: inline;
+}
+.mod_activities .content_title .tab_list li .tab_selected
+{
+    color: #333;
+    background: #fff;
+}
+.mod_activities .content_title .date
+{
+    float: right;
+    color: #fba096;
+    line-height: 44px;
+}
+.mod_activities .content_title .date .link
+{
+    color: #fff;
+    margin:0 15px 0 40px;
+}
+.mod_activities .rank_table
+{
+    width: 100%;
+    text-align: center;
+}
+.mod_activities .rank_table th
+{
+    padding: 15px 0;
+    text-align: center;
+    color: #666;
+}
+.mod_activities .rank_table tr td
+{
+    border-bottom: 1px dashed #e3e3e3;
+}
+.mod_activities .rank_table thead tr, .mod_activities .rank_table tr.last_line
+{
+    border-bottom: none;
+}
+.mod_activities .rank_table td
+{
+    line-height: 38px;
+}
+.mod_activities .rank_table td .ico_label
+{
+    display: inline-block;
+    width: 14px;
+    height: 19px;
+    line-height: 13px;
+    background:url("image/sprite_index.32.png") -180px -140px no-repeat;
+    text-align: center;
+    color: #fff;
+}
+.mod_activities .rank_table td .ico_label_2
+{
+    display: inline-block;
+    width: 14px;
+    height: 19px;
+    line-height: 13px;
+    background:url("image/sprite_index.32.png") -160px -140px no-repeat;
+    text-align: center;
+    color: #fff;
+}
+.mod_activities .rank_table td .red
+{
+    color: #ea554a;
+}
+.mod_activities .rank_table td .link
+{
+    color: #2f66a2;
+}
+/*最新动态 小赢家训练营 end*/
+/*弹窗 start*/
+.comment_layer .dialog_layer_cont
+{
+	padding-top: 0;
+}
+.dialog_layer .trangle_outer {
+position: absolute;
+display: inline-block;
+width: 0;
+height: 0;
+font-size: 0;
+line-height: 0;
+border-width: 40px;
+border-color: transparent transparent #ccc transparent;
+border-style: solid dashed dashed;
+top: -58px;
+left: 370px;
+}
+.dialog_layer .trangle_inner {
+position: absolute;
+display: inline-block;
+width: 0;
+height: 0;
+font-size: 0;
+line-height: 0;
+border-width: 13px;
+border-color: transparent transparent #fff transparent;
+border-style: solid dashed dashed;
+top: -7px;
+left: -13px;
+}
+.dialog_layer .news_slide {
+padding: 15px 0;
+border-bottom: 1px solid #e4e4e4;
+}
+.news_slide img
+{
+	float: left;
+}
+.dialog_layer .news_slide .news_content {
+margin-left: 40px;
+/*font-family: "simsun";*/
+}
+.dialog_layer .name {
+line-height: 33px;
+color: #333;
+}
+.dialog_layer .news_slide .news_content
+{
+	margin-left: 40px;
+	/*font-family: "simsun";*/
+}
+.dialog_layer .news_slide .news_content .name
+{
+	line-height: 33px;
+	color: #333;
+}
+.dialog_layer .news_slide .news_content .name_title
+{
+	margin-left: 70px;
+	color: #858585;
+}
+.dialog_layer .news_slide .news_content .time
+{
+	color: #bfbfbf;
+	margin-left: 30px;
+}
+.dialog_layer .news_slide .news_content .news_title
+{
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.dialog_layer .news_slide .news_content .news_title em
+{
+	color: #ea544b;
+	font-size: 16px;	
+}
+.dialog_layer .news_slide .news_content .news_text
+{
+	color: #666;
+	margin-bottom: 10px;
+	line-height: 24px;
+	max-width: 320px;
+	_width:320px;
+}
+.dialog_layer .news_slide .news_content .news_feed 
+{
+	overflow: hidden;
+}
+.dialog_layer .news_slide .news_content .news_feed .label
+{
+	padding: 0 5px;
+	height: 18px;
+	line-height: 18px;
+	color: #fff;
+	background: #f9c74a;
+	display: inline-block;
+	border-radius: 3px;
+	margin-right: 5px;
+}
+.dialog_layer .news_slide .news_content .news_feed ul
+{
+	float: left;
+}
+.dialog_layer .news_slide .news_content .news_feed ul li
+{
+	float: left;
+}
+.dialog_layer .news_slide .news_content .news_feed ul li a
+{
+	padding: 0 30px 0 0;
+	color: #8f8f8f;
+}
+.dialog_layer .news_slide .news_content .news_feed ul li .ico
+{
+	display: inline-block;
+	background:url("image/sprite_index.32.png") -180px -120px no-repeat;
+	margin-right: 5px;
+	position: relative;
+	top:2px;
+}
+.dialog_layer .news_slide .news_content .news_feed ul li .ico_praise
+{
+	width: 13px;
+	height: 14px;
+	background-position: -180px -120px;	
+}
+.dialog_layer .news_slide .news_content .news_feed ul li .ico_comment
+{
+	width: 14px;
+	height: 14px;
+	background-position: -160px -120px;	
+}
+.dialog_layer .news_slide .news_content .news_feed ul li .ico_disagree
+{
+	width: 13px;
+	height: 14px;
+	background-position: -200px -120px;	
+}
+.dialog_layer .news_slide .news_content .news_feed ul li .ico_share
+{
+	width: 10px;
+	height: 14px;
+	background-position: -220px -120px;	
+}
+.dialog_layer .bordernone
+{
+	border: none;
+}
+.dialog_layer .borderdashed
+{
+	border-top: 1px dashed #e4e4e4;
+	margin-top: 15px;
+}
+.dialog_layer .publish
+{
+	overflow: hidden;
+}
+.dialog_layer .publish .bf_login
+{
+	display: none;
+}
+.dialog_layer .publish .comment
+{
+	width: 540px;
+	height: 44px;
+	line-height: 44px;
+	border:1px solid #dcdcdc;
+	float: left;
+}
+.dialog_layer .publish .btn_gray
+{
+	width: 100px;
+	height: 46px;
+	line-height: 46px;
+	border-radius: 0;
+	font-size: 18px;
+	float: left;
+}
+.dialog_layer .bf .bf_login
+{
+	display: block;
+	padding: 0 20px;
+	line-height: 44px;
+	height: 44px;
+	border: 1px solid #dcdcdc; 
+}
+.dialog_layer .bf .af_login
+{
+	display: none;
+}
+/*弹窗 end*/

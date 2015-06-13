@@ -1,0 +1,166 @@
+@charset "utf-8";
+.body
+{
+    background: #f0f0f0;
+}
+.body .mod_wrap
+{
+    width: 990px;
+    margin: 0 auto;
+    padding:20px 0 140px 0;
+}
+.mod_content
+{   
+    background: #fff;
+    border:1px solid #e7e8ea;
+    padding: 30px 0;
+}
+.mod_content .ui_form
+{
+    font-family: "simsun";
+}
+.mod_content .ui_form, .mod_content .op_btn
+{
+    width: 705px;
+}
+.mod_content .ui_form th
+{
+    line-height: 36px;
+}
+.mod_content .ui_form th .need
+{
+    color: #eb544b;
+    margin-right: 10px;
+    line-height: 36px;
+}
+.mod_content .ui_form td 
+{
+    color: #404a58;
+}
+.mod_content .ui_form .login_info
+{
+    width: 275px;
+}
+.mod_content .ui_form .login_info .name
+{
+    width: 275px;
+}
+.mod_content .ui_form .security_code, .mod_content .ui_form .security_code .name
+{
+    width: 155px;
+}
+.mod_content .ui_form .btn_gray_2
+{
+    padding: 0 20px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+}
+.mod_content .ui_form td .label
+{
+    line-height: 40px;
+}
+.mod_content .ui_form td .label input
+{
+    margin-right: 10px;   
+}
+.mod_content .ui_form td .check_area input
+{
+    margin-right: 10px; 
+    margin-top: -2px;  
+}
+.mod_content .ui_form td .check_area .label
+{
+    margin-right: 20px;
+}
+.mod_wrap .right_side
+{
+    float: right;
+    padding-left: 35px;
+    width: 230px;
+    margin-top: 30px;
+    height: 330px;
+    border-left: 1px solid #ddd;
+    color: #666;
+    font-size: 14px;
+}
+.mod_wrap .right_side .btn_gray
+{
+    font-size: 16px;
+    padding:5px 20px;
+}
+.mod_content .mod_confirm
+{
+    margin-left: 75px;
+}
+.mod_content .mod_confirm .text input
+{
+    margin-right: 10px;
+}
+.mod_content .op_btn
+{
+    text-align: center;
+    margin: 60px 0;
+}
+.mod_content .op_btn .btn_red
+{
+    width: 230px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+}
+
+/*注册结果 start*/
+.regist_result
+{
+    background: #fff;
+    padding: 70px 0;
+    text-align: center;
+}
+.regist_result h2
+{
+    font-size: 26px;
+    color: #505050;
+    margin-bottom: 25px;
+}
+.regist_result .des
+{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.regist_result .des strong
+{
+    font-size: 24px;
+    color: #ea544b;
+    font-weight: normal;
+}
+.regist_result .op_area .btn
+{
+    font-size: 16px;
+    padding: 0 30px;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+.regist_result .op_area .link
+{
+    margin: 0 13px;
+}
+.regist_result .des_2
+{
+    font-size: 12px;
+    color: #333;
+}
+/*注册结果 end*/
+
+
+
+
+
+
+
+
+
+

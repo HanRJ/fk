@@ -1,0 +1,227 @@
+[ 2015-03-26T13:09:54+08:00 ] ::1 /runmoney/Topic/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005751s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0594s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_topic` WHERE `status` <> 99 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`thumb`,`gold_price`,`description`,`parameter`,`stocks`,`pictures`,`remark`,`author_id`,`status`,`update_time`,`create_time` FROM `rm_topic` WHERE `status` <> 99 ORDER BY create_time asc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2015-03-26T13:10:11+08:00 ] ::1 /runmoney/Center/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002111s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0119s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( author_id = 1 AND status != 99 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0187s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 217 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 238 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 280 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 280 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 280 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2015-03-26T13:10:14+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0065s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0062s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2015-03-26T13:10:16+08:00 ] ::1 /runmoney/Center/bill.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000685s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: _page /Users/ningsk/codes/runmoney/Runtime/Cache/Home/c909503d22234e2bf2a53076fca9e041.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2015-03-26T13:10:29+08:00 ] ::1 /runmoney/Center/invest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002694s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0159s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined variable: _page /Users/ningsk/codes/runmoney/Runtime/Cache/Home/332cf20db6c54ed2d672520079e6b6f7.php 第 393 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2015-03-26T13:10:32+08:00 ] ::1 /runmoney/Center/theme.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000658s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_topic` WHERE `author_id` = '1' AND `status` <> 99 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`thumb`,`gold_price`,`description`,`parameter`,`stocks`,`pictures`,`remark`,`author_id`,`status`,`update_time`,`create_time` FROM `rm_topic` WHERE `author_id` = '1' AND `status` <> 99 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/0adce7bad1d1b7adb8a317de96228b9b.php 第 167 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/0adce7bad1d1b7adb8a317de96228b9b.php 第 167 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/0adce7bad1d1b7adb8a317de96228b9b.php 第 167 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/0adce7bad1d1b7adb8a317de96228b9b.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2015-03-26T13:10:37+08:00 ] ::1 /runmoney/Center/setting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001548s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0069s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2015-03-26T13:10:42+08:00 ] ::1 /runmoney/Center/message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000703s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: _page /Users/ningsk/codes/runmoney/Runtime/Cache/Home/04dd7dd7a67b0a58956845035328ae7b.php 第 144 行.
+NOTIC: [8] Undefined variable: _page /Users/ningsk/codes/runmoney/Runtime/Cache/Home/04dd7dd7a67b0a58956845035328ae7b.php 第 291 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001405s ]
+

@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>金融炼金术 新建主题</title>
+    <link href="__PUBLIC__/V1/css/global.css" rel="stylesheet" media="screen" />
+    <link href="__PUBLIC__/V1/css/topic.css" rel="stylesheet" media="screen" />
+    <link href="__PUBLIC__/V1/css/uploadify.css" rel="stylesheet" media="screen" />
+    <link href="__PUBLIC__/V1/css/jquery-ui.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+    <include file='Public/header' />
+
+    <!-- 面包屑 start -->
+    <div class="breadcrumb">
+        <div class="wrap">
+            <ul>
+                <li>
+                    <a href="##" class="link">首页</a>
+                </li>
+                <li>
+                    <a href="##" class="link link_now"> > 新建主题</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 面包屑 end -->
+    <!-- 内容 start -->
+    <div class="main_content">
+    <div class="wrap clear">
+    <!-- 左边 start -->
+    <div class="left_ct">
+
+    <div class="title">
+        <h2>新建主题策略</h2>
+        <div class="steps">
+            <div class="step">
+            </div>
+					<span class="text">
+					简单3步，助你投资
+					</span>
+        </div>
+    </div>
+
+    <div class="new_topic">
+
+        <div class="title_area">
+            <span>*</span>
+            策略名称
+        </div>
+        <div class="topic_content">
+            <label class="login_info">
+                <input type="text" id="topic_title" class="name" placeholder="">
+            </label>
+            <div class="update">
+                <a href="#" id="btn_upload_topic_pic" class="btn btn_gray_2">上传策略图</a>
+            </div>
+            <div class="update topic_pic" id="upload_queue" style="margin-left:0px;">
+                
+            </div>
+        </div>
+
+        <div class="title_area">
+            <span>*</span>
+            策略说明
+        </div>
+        <div class="topic_content">
+            <textarea class="textarea" id="topic_desc"></textarea>
+        </div>
+        <div class="slice">
+
+        </div>
+        <div class="title_area">
+            <span>*</span>
+            策略指标
+        </div>
+        <div class="topic_content">
+            <textarea class="textarea" id="topic_para"></textarea>
+        </div>
+        <div class="slice">
+
+        </div>
+
+        <div class="title_area">
+            <span>*</span>
+            添加股票<span class="des">（一个策略最多添加30支股票）</span>
+        </div>
+        <div class="topic_content">
+            <div class="stock_list">
+                <input type="text" class="input" id="stock_auto_complete" placeholder="请输入代码/拼音/名称">
+                <div class="list_ct">
+                    <div class="list_text">
+                        <a href="##" class="btn btn_gray_2">比例划分</a>
+                        <em id="stock_total_info">股票列表及其特仓（0只占0%）</em>
+                    </div>
+                    <table id="selected_stock_tb">
+                        
+                    </table>
+                </div>
+            </div>
+
+            <div class="hot_stock" id="hot_stock_list">
+                <div class="text">
+                    一个月内热门策略股票
+                </div>
+                <div class="hot_stock_item">
+                    <a href="##" class="btn btn_gray_2"><span class="ico_plus">+</span>添加</a>
+                    500034 中信证券
+                </div>
+                <div class="hot_stock_item">
+                    <a href="##" class="btn btn_gray_2"><span class="ico_plus">+</span>添加</a>
+                    500034 中信证券
+                </div>
+                <div class="hot_stock_item">
+                    <a href="##" class="btn btn_gray_2"><span class="ico_plus">+</span>添加</a>
+                    500034 中信证券
+                </div>
+                <div class="hot_stock_item">
+                    <a href="##" class="btn btn_gray_2"><span class="ico_plus">+</span>添加</a>
+                    500034 中信证券
+                </div>
+                <div class="hot_stock_item">
+                    <a href="##" class="btn btn_gray_2"><span class="ico_plus">+</span>添加</a>
+                    500034 中信证券
+                </div>
+                <div class="hot_stock_item">
+                    <a href="##" class="btn btn_gray_2"><span class="ico_plus">+</span>添加</a>
+                    500034 中信证券
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mod_recommend clear">
+        <div class="title_area">
+            添加推荐理由
+        </div>
+        <textarea class="textarea" id="topic_remark"></textarea>
+        <div class="upload" id="topic_pics">
+            <div class="update">
+                <a href="#" id="btn_upload_pics" class="btn btn_gray_2">上传照片</a>
+            </div>
+            <!--
+            <div class="update">
+                <a href="##" class="plus"></a>
+            </div>
+            <div class="update">
+                <a href="##" class="plus"></a>
+            </div>
+            <div class="update">
+                <a href="##" class="plus"></a>
+            </div>
+            <div class="update last">
+                <a href="##" class="plus"></a>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <div class="op_area">
+        <a href="#" class="btn btn_gray btn_topic_save">保存</a>
+        <a href="#" class="btn btn_red btn_topic_preview">预览并发布</a>
+    </div>
+
+    </div>
+    <!-- 左边 end -->
+
+    <!-- 右边 start -->
+    <div class="right_ct">
+        <div class="mod_hot">
+            <div class="title">
+                <h2>热门主题</h2>
+            </div>
+            <div class="list_item">
+                <a href="##" class="news_img"><img src="__PUBLIC__/V1/image/top_list_news1.jpg"></a>
+                <p class="news_text">银河证券特级分析师推荐主题，持续两个季度收益率超过45%</p>
+            </div>
+            <div class="list_item">
+                <a href="##" class="news_img"><img src="__PUBLIC__/V1/image/top_list_news2.jpg"></a>
+                <p class="news_text">银河证券特级分析师推荐主题，持续两个季度收益率超过45%</p>
+            </div>
+            <div class="list_item">
+                <a href="##" class="news_img"><img src="__PUBLIC__/V1/image/top_list_news3.jpg"></a>
+                <p class="news_text">银河证券特级分析师推荐主题，持续两个季度收益率超过45%</p>
+            </div>
+            <div class="list_item">
+                <a href="##" class="news_img"><img src="__PUBLIC__/V1/image/top_list_news4.jpg"></a>
+                <p class="news_text">银河证券特级分析师推荐主题，持续两个季度收益率超过45%</p>
+            </div>
+        </div>
+    </div>
+    <!-- 右边 end -->
+    </div>
+
+    </div>
+    <!-- 内容 end -->
+
+    <include file='Public/footer' />
+
+
+    <script type="text/html" id="topic_create_tmpl">
+    <div class="dialog_layer pop_layer label_layer" style="width:450px;left:-1000px;top:-100px;">
+        <div class="dialog_layer_main">
+            <div class="dialog_layer_title title_white"><h3><a href="#" class="close pop-btn-close"></a></h3></div>
+            <div class="dialog_layer_cont">
+                <p class="cont_text"><strong>保存成功！</strong>您创建的主题可以在 个人中心>创建发布 下查看、编辑，如果想发布到网站上，请您继续预览并发布主题</p>
+            </div>
+        </div>
+    </div>
+    </script>
+
+    <script type="text/html" id="stock_selected_tmpl">
+        <colgroup></colgroup>
+        <thead>
+            <th>&nbsp;</th>
+            <th>代码</th>
+            <th>名称</th>
+            <th>持仓比例(%)</th>
+            <th>&nbsp;</th>
+        </thead>
+        <%if(stocks.length>0){%>
+        <tbody>
+            <% var percent = (100/stocks.length).toFixed(1);%>
+            <%_.each(stocks,function(stock,i){%>
+                <tr data-code="<%=stock.code||''%>">
+                    <td></td>
+                    <td><%=stock.code||''%></td>
+                    <td><%=stock.name||''%></td>
+                    <td>
+                        <span class="mod_count">
+                            <a href="#" class="stock btn_minus">-</a>
+                                <input type="text" value="<%=percent%>" class="count_num">
+                            <a href="#" class="stock btn_plus">+</a>
+                        </span>
+                    </td>
+                    <td>
+                        <a data-stockid="<%=stock.id||''%>" href="#" class="stock btn_delete"></a>
+                    </td>
+                </tr>
+            <%})%>
+        </tbody>
+        <%} else{%>
+        <tbody class="blank">
+            <tr>
+                <td colspan="5">
+                    <p>暂无股票，请在上方搜索框中输入</p>
+                    <p>“代码/名称/拼音”添加股票</p>
+                </td>
+            </tr>
+        </tbody>
+        <%}%>
+    </script>
+
+
+    <script type="text/javascript" src="__PUBLIC__/V1/js/lib/jquery.uploadify.js?ver=<?php echo rand(0,9999);?>"></script>
+    <script type="text/javascript" src="__PUBLIC__/V1/js/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/V1/js/topic/create.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+            var maxPicsNum = 4,uploadedNum = 0;
+            /**
+             * [buildUploadify 构建文件上传按钮]
+             */
+            function buildUploadify(opt){
+
+                $("#"+opt.btnId).uploadify({
+                    'formData': {
+                        <?php $timestamp = time();?>
+                        'timestamp' : '<?php echo $timestamp;?>',
+                        'token'     : '<?php echo md5('#$afWE24_=' . $timestamp);?>'
+                    },
+                    'swf'           : '__PUBLIC__/V1/swf/uploadify.swf',
+                    'uploader'      : '{:U('Topic/uploadpic')}',
+                    'width'         : 90,
+                    'height'        : 30,
+                    'queueID'       : opt.queueId||false,
+                    'buttonText'    : opt.buttonText||'上传图片', 
+                    'fileExt'       : '*.jpg;*.gif,*.png',
+                    'fileDesc'      : 'Web Image Files(.JPG,.GIF,.PNG)',
+                    'onCancel'      : opt.uploadCancel || function(){},
+                    'onUploadSuccess': opt.uplaodSuccess || function(){},
+                    'onUploadError'  : opt.uploadError || function(){},
+                    'onUploadStart'  : opt.uploadStart || function(){},
+                    'removeCompleted': false,
+                    'itemTemplate': opt.itemTemplate || false,
+                    'multi': false,
+                    'uploadLimit': opt.uploadLimit || 0
+                });
+            };
+
+            /**
+             * 上传策略图
+             */
+            buildUploadify({
+                btnId: 'btn_upload_topic_pic',
+                queueId: 'upload_queue',
+                buttonText: '上传策略图',
+                itemTemplate:'<div></div>',
+                uploadStart: function (file){
+                    $("#upload_queue").empty();
+                },
+                uplaodSuccess: function (file, res, response){
+                    var res = $.parseJSON(res);
+                    if(response == true){
+                        if(res.state == 0){
+                            var path = res.data.files.Filedata.path;
+                            $("#upload_queue").empty().html("<a class='topic_thumb' href='"+path+"' target='_blank'><img style='width:100px;height:100px;' src='"+path+"'></a>");
+                        }else{
+                            alert(res.message || '图片上传出现错误！');
+                        }
+                        
+                    }else{
+                        alert('图片上传出现错误！')
+                    }
+                }
+
+            });
+            /**
+             * 上传图片
+             */
+            buildUploadify({
+                btnId: 'btn_upload_pics',
+                queueId: 'upload_queue',
+                buttonText: '上传图片',
+                itemTemplate:'<div></div>',
+                uplaodSuccess: function (file, res, response){
+                    var res = $.parseJSON(res);
+                    if(response == true){
+                        if(res.state == 0){
+                            ++uploadedNum;
+                            var path = res.data.files.Filedata.path;
+                            $("#topic_pics").append("<div class='update'><a class='topic_pic' href='"+path+"' target='_blank'><img style='width:100px;height:100px;' src='"+path+"'></a></div>");
+                            if(uploadedNum >= maxPicsNum){
+                                $("#btn_upload_pics").uploadify('disable',true);
+                            }
+                        }else{
+                            alert(res.message || '图片上传出现错误！');
+                        }
+                        
+                    }else{
+                        alert('图片上传出现错误！')
+                    }
+                }
+
+            });
+            
+        });
+        
+    </script>
+</body>
+</html>

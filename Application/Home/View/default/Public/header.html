@@ -1,0 +1,85 @@
+<!-- 导航 start -->
+<div class="mod_navigation_1">
+    <div class="wrap">
+        <div class="logo">
+            <div class="logo_img">
+                <span class="hidden">金融炼金术</span>
+            </div>
+
+            <if condition="$logined eq 'false'">
+                <!-- 登陆前 start -->
+                <div class="login" style="">
+                    <a href="#" class="btn btn_red login_btn">立即登录</a>
+                    <div class="links">
+                        <p>没有账号？<a href="{:U('User/register')}" class="link">立即注册</a></p>
+                    </div>
+                </div>
+                <else />
+                <!-- 登录前 end -->
+                <div class="login login_success">
+                    <!-- 登陆后 start -->
+                    <a href="{:U('Center/setting')}" class="photo"><img src="__PUBLIC__/V1/image/img-4.png"></a>
+                    <div class="user_info">
+                        <p class="user_name">
+                            <a href="{:U('Center/index')}" class="name">{:session('user_auth.id')}{:session('user_auth.username')}，</a>
+                            <a href="javascript:void(0)" class="link logout_btn">退出</a>
+                            <a href="javascript:void(0)" class="ico ico_dollar"></a>
+                        </p>
+                        <p class="user_date">{:now1()} <span>交易中</span></p>
+                    </div>
+                    <!-- 登录后 end -->
+                </div>
+            </if>
+        </div>
+        <div class="mod_1">
+            <div class="total_text">
+                <span class="ico ico_dollar"></span><span class="text_1">1.5亿</span><span class="text_2">资金冶炼中</span><a href="##" class="btn btn_yellow">立即开户</a>
+            </div>
+            <div class="state">
+                <div class="chart">
+                    <img src="__PUBLIC__/V1/image/chart.png">
+                </div>
+                <ul>
+                    <li><a href="##" class="title"><span class="label">金</span><span class="news_title textoverflow">金融</span><span class="news_data"><i>28%</i>/日</span></a><a href="##" class="kudos"></a><span class="progress_out"><span class="progress_in" style="width:20%;"></span></span></li>
+                    <li><a href="##" class="title"><span class="label">木</span><span class="news_title textoverflow">上市公司并购定增上市公司并购定增</span><span class="news_data"><i>21%</i>/日</span></a><a href="##" class="kudos"></a><span class="progress_out"><span class="progress_in" style="width:50%;"></span></span></li>
+                    <li><a href="##" class="title"><span class="label">水</span><span class="news_title textoverflow">科学技术驱动</span><span class="news_data"><i>98%</i>/日</span></a><a href="##" class="kudos"></a><span class="progress_out"><span class="progress_in" style="width:70%;"></span></span></li>
+                    <li><a href="##" class="title"><span class="label">火</span><span class="news_title textoverflow">军工等政策驱动</span><span class="news_data"><i>128%</i>/日</span></a><a href="##" class="kudos"></a><span class="progress_out"><span class="progress_in" style="width:20%;"></span></span></li>
+                    <li><a href="##" class="title"><span class="label">风</span><span class="news_title textoverflow">科学技术驱动类</span><span class="news_data"><i>35%</i>/日</span></a><a href="##" class="kudos"></a><span class="progress_out"><span class="progress_in" style="width:30%;"></span></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mod_2">
+            <div class="total_text">
+                <span class="ico ico_rank"></span><span class="text_1">899位</span><span class="text_2">炼金师扎堆休息侃大山</span>
+            </div>
+            <div class="state">
+                <ul>
+                    <li><a href="##" class="title textoverflow">新浪财经资讯 12月15日消息 沪深消息</a><span class="text_time">10分钟前</span></li>
+                    <li><a href="##" class="title textoverflow">深成指开低后探底回升翻红消息文字文字文字</a><span class="text_time">10分钟前</span></li>
+                    <li><a href="##" class="title textoverflow">深成指开低后探底回升翻红消息文字文字文字</a><span class="text_time">1分钟前</span></li><li><a href="##" class="title textoverflow">深成指开低后探底回升翻红消息文字文字文字</a><span class="text_time">10分钟前</span></li><li><a href="##" class="title textoverflow">深成指开低后探底回升翻红消息文字文字文字</a><span class="text_time">10分钟前</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mod_navigation_2">
+    <div class="wrap">
+        <ul class="nav">
+            <li class="nav_item <if condition="CONTROLLER_NAME eq 'Index'">nav_item_selected</if>"><a href="{:U('/')}">首页</a></li>
+            <li class="nav_item <if condition="CONTROLLER_NAME eq 'Topic' AND ACTION_NAME eq 'listAction'">nav_item_selected</if>"><a href="{:U('Topic/list')}">主题排名</a></li>
+            <!--<li class="nav_item"><a href="#">社区</a></li>-->
+            <li class="nav_item <if condition="CONTROLLER_NAME eq 'Center'">nav_item_selected</if>"><a href="{:U('Center/index')}">个人中心</a></li>
+            <li class="nav_item <if condition="CONTROLLER_NAME eq 'Topic' AND ACTION_NAME eq 'create'">nav_item_selected</if>"><a href="{:U('Topic/create')}"><span class="plus">+</span>新建主题</a></li>
+        </ul>
+        <div class="op_area">
+            <a href="{:U('Center/collect')}" class="op_btn"><span class="ico ico_heart"></span><em id="collect_cnt"><?=session('collect_cnt')?session('collect_cnt'):'0' ?></i></em></a>
+            <a href="{:U('Center/cart')}" class="op_btn"><span class="ico ico_cart"></span><em id="cart_cnt"><?=session('cart_cnt')?session('cart_cnt'):'0' ?></em></a>
+        </div>
+        <div class="btn_area">
+            <a href="##" class="btn btn_gray">体验模拟交易</a>
+            <a href="##" class="btn btn_gray">关联实盘账户</a>
+        </div>
+
+    </div>
+</div>
+<!-- 导航 end -->

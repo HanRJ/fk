@@ -1,0 +1,501 @@
+[ 2015-02-02T22:11:31+08:00 ] ::1 /runmoney/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005882s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0276s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `rm_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `rm_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `rm_document` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `rm_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1422886291 AND ( deadline = 0 OR deadline > 1422886291 ) ORDER BY `id` DESC  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000475s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000520s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2015-02-02T22:11:49+08:00 ] ::1 /runmoney/ajaxtest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+
+[ 2015-02-02T22:11:50+08:00 ] ::1 /runmoney/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000698s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0011s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_category` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `rm_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_document` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `rm_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1422886309 AND ( deadline = 0 OR deadline > 1422886309 ) ORDER BY `id` DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-02-02T22:12:01+08:00 ] ::1 /runmoney/Index/ajaxtest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001422s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 37 行.
+
+[ 2015-02-02T22:12:07+08:00 ] ::1 /runmoney/ajaxtest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000791s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2015-02-02T22:12:07+08:00 ] ::1 /runmoney/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000656s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0011s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_category` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `rm_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_document` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `rm_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1422886327 AND ( deadline = 0 OR deadline > 1422886327 ) ORDER BY `id` DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2015-02-02T22:12:13+08:00 ] ::1 /runmoney/Index/ajaxtest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000781s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 37 行.
+
+[ 2015-02-02T22:16:57+08:00 ] ::1 /runmoney/Index/topics.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 35 行.
+
+[ 2015-02-02T22:17:02+08:00 ] ::1 /runmoney/Index/topics
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000881s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0011s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 35 行.
+
+[ 2015-02-02T22:17:39+08:00 ] ::1 /runmoney/Index/topics?type=default
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000767s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0011s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 35 行.
+
+[ 2015-02-02T22:18:08+08:00 ] ::1 /runmoney/Index/topics?type=default
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000730s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 36 行.
+
+[ 2015-02-02T22:18:24+08:00 ] ::1 /runmoney/Index/topics?type=default&callback=mycallback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000869s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 36 行.
+
+[ 2015-02-02T22:18:39+08:00 ] ::1 /runmoney/Index/topics?type=default&callback=mycallback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000963s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 36 行.
+
+[ 2015-02-02T22:18:46+08:00 ] ::1 /runmoney/Index/topics?callback=mycallback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000942s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0011s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 36 行.
+
+[ 2015-02-02T22:19:49+08:00 ] ::1 /runmoney/Index/topic?callback=mycallback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 37 行.
+
+[ 2015-02-02T22:24:55+08:00 ] ::1 /runmoney/Index/topic?callback=mycallback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001543s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant type - assumed 'type' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 60 行.
+
+[ 2015-02-02T22:37:44+08:00 ] ::1 /runmoney/Index/topic?callback=mycallback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003539s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 84 行.
+
+[ 2015-02-02T22:53:22+08:00 ] ::1 /runmoney/Index/topic?callback=mycallback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003337s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 50 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 56 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 57 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 58 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 59 行.
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 107 行.
+
+[ 2015-02-02T22:57:31+08:00 ] ::1 /runmoney/Index/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 101 行.
+
+[ 2015-02-02T22:57:41+08:00 ] ::1 /runmoney/Index/comment?tid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000962s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 106 行.
+
+[ 2015-02-02T22:58:00+08:00 ] ::1 /runmoney/Index/comment?tid=1&callback=mycallback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 81 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 87 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 88 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 89 行.
+NOTIC: [8] Use of undefined constant i - assumed 'i' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 90 行.
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/IndexController.class.php 第 106 行.
+

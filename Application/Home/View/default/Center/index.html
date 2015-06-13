@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>金融炼金术 个人中心</title>
+    <link href="__PUBLIC__/V1/css/global.css" rel="stylesheet" media="screen" />
+    <link href="__PUBLIC__/V1/css/space.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+    <include file='Public/header' />
+    <!-- 内容 start -->
+    <div class="main_content">
+        <div class="wrap clear">
+            <include file='Public/centerSide' />
+            <!-- 右边 start -->
+            <div class="main">
+                <div class="mod_detail mod_overview">
+                    <div class="detail_rate">
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    <div class="rate_item rate_item_btn">
+                                        <p><a href="##" class="btn btn_red">登录股票模拟账户</a></p>
+                                        <p><a href="##" class="btn btn_gray">登录证券交易账户</a></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rate_item">
+                                        <p class="text">总资产</p>
+                                        <p class="rate"><strong>10万</strong>元</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rate_item">
+                                        <p class="text">投资资产</p>
+                                        <p class="rate"><strong>9万</strong>元</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rate_item">
+                                        <p class="text">浮盈（/率）</p>
+                                        <p class="rate"><strong>1.8万</strong>元 <span class="rate_item_tip">(18%)</span></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="rate_item rate_item_last">
+                                        <p class="text">周排名</p>
+                                        <p class="rate"><strong>6718</strong>/56万名</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="detail_invest">
+                        <div class="mod_title">
+                            <h3>投资管理</h3>
+                            <span class="update_date">更新时间：{:date("Y.m.d")}</span>
+                        </div>
+                        <table class="mod_table">
+                            <thead>
+                            <tr>
+                                <th class="col_theme">主题策略（股票） </th>
+                                <th class="col_fund">配置资金</th>
+                                <th class="col_date">跟投日期</th>
+                                <th class="col_profit">总收益（/率）</th>
+                                <th>最新评论</th>
+                                <th class="col_handle">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <p><a href="{:U('Topic/index', array(id=>1))}" target="_blank">体育强国</a></p>
+                                    <p class="expert">（专家小李）</p>
+                                </td>
+                                <td>20000</td>
+                                <td>2104-11-02</td>
+                                <td>
+                                    <p>1万元</p>
+                                    <p class="rate">（<strong>/58%</strong>）</p>
+                                </td>
+                                <td>
+                                    <p class="comment">
+                                        很好很强大！上周刚入 市的菜鸟好很强大！上周刚入 市的菜鸟好很强大！上周刚入 市的菜鸟...
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="##" class="btn btn_red">买入</a>
+                                    <a href="##" class="btn btn_gray_2">卖出</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><a href="{:U('Topic/index', array(id=>2))}" target="_blank">体育强国</a></p>
+                                    <p class="expert">（专家小李）</p>
+                                </td>
+                                <td>20000</td>
+                                <td>2104-11-02</td>
+                                <td>
+                                    <p>1万元</p>
+                                    <p class="rate">（<strong>/58%</strong>）</p>
+                                </td>
+                                <td>
+                                    <p class="comment">
+                                    很好很强大！上周刚入 市的菜鸟...
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="##" class="btn btn_red">买入</a>
+                                    <a href="##" class="btn btn_gray_2">卖出</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><a href="{:U('Topic/index', array(id=>3))}" target="_blank">体育强国</a></p>
+                                    <p class="expert">（专家小李）</p>
+                                </td>
+                                <td>20000</td>
+                                <td>2104-11-02</td>
+                                <td>
+                                    <p>1万元</p>
+                                    <p class="rate">（<strong>/58%</strong>）</p>
+                                </td>
+                                <td>
+                                    <p class="comment">
+                                    很好很强大！上周刚入 市的菜鸟...
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="##" class="btn btn_red">买入</a>
+                                    <a href="##" class="btn btn_gray_2">卖出</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="detail_theme">
+                        <div class="mod_title">
+                            <h3>我发布的主题</h3>
+                            <a href="{:U('Topic/create')}" class="btn_add">新建主题</a>
+                        </div>
+                        <table class="mod_table">
+                            <thead>
+                            <tr>
+                                <th class="col_theme">主题策略（股票） </th>
+                                <th class="col_date">发布日期</th>
+                                <th class="col_fund">配置资金</th>
+                                <th class="col_profit">跟投人气</th>
+                                <th>最新评论</th>
+                                <th class="col_handle">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <if condition="count($topics) eq 0 ">
+                                <td colspan="6">尚未发布主题！</td>
+                            </if>
+                            <foreach name="topics" item="topic">
+                                <tr data-tid="{$topic.id}" class="topic_tr">
+                                    <td>
+                                        <p><a href="{:U('Topic/index', array(id=>$topic['id']))}" target="_blank">{$topic.title}</a></p>
+                                    </td>
+                                    <td>{$topic.create_time|date='Y-m-d',###}</td>
+                                    <td>1万元</td>
+                                    <td>6万人</td>
+                                    <td>
+                                        <p class="comment">很好很强大！上入市的菜鸟...</p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn_red">买入</a>
+                                        <a href="#" class="btn btn_gray_2">卖出</a>
+                                        <a href="#" class="btn btn_delete">删除</a>
+                                    </td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="detail_deal">
+                        <div class="mod_title">
+                            <h3>同步我的交易</h3>
+                            <a href="##" class="btn_gray_2 btn_refresh">刷新</a>
+                        </div>
+                        <table class="mod_table">
+                            <thead>
+                            <tr>
+                                <th class="col_share">股票</th>
+                                <th class="col_share_count">股数</th>
+                                <th class="col_deal">买卖</th>
+                                <th class="col_date">时间</th>
+                                <th class="col_price">价格</th>
+                                <th class="col_profit">盈亏</th>
+                                <th class="col_handle">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td colspan="7">
+                                    <p>请您 <a href="##" class="link">登录证券交易账户</a>，投资效果及时优化！</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边 end -->
+        </div>
+    </div>
+    <!-- 内容 end -->
+
+    <include file='Public/footer' />
+    <script type="text/javascript" src="__PUBLIC__/V1/js/center/index.js"></script>
+
+</body>
+</html>

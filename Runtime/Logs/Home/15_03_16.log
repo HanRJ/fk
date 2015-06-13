@@ -1,0 +1,1903 @@
+[ 2015-03-16T22:51:50+08:00 ] ::1 /runmoney/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004198s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0299s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `rm_category` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `rm_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `rm_document` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `rm_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1426517510 AND ( deadline = 0 OR deadline > 1426517510 ) ORDER BY `id` DESC  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2015-03-16T22:51:51+08:00 ] ::1 /runmoney/Index/topic?callback=rm_callback_93692_1426517511099&type=&lastid=0&_=1426517510845
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0073s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T22:51:51+08:00 ] ::1 /runmoney/Index/ranklist?callback=rm_callback_93707_1426517511104&type=all&_=1426517510846
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T22:52:02+08:00 ] ::1 /runmoney/Index/comment?callback=rm_callback_72203_1426517522479&tid=1&_=1426517510847
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002729s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T22:52:18+08:00 ] ::1 /runmoney/User/dologin?callback=rm_callback_39937_1426517538128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007685s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009749s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0060s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: lite /Users/ningsk/codes/runmoney/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `rm_member` [ RunTime:0.0062s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `rm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `rm_member` SET `login`=`login`+1,`last_login_time`='1426517538',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `rm_action` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `rm_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `rm_action_log` [ RunTime:0.0215s ]
+SQL: INSERT INTO `rm_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','0','member','1','1426517538','ninstein在2015-03-16 22:52登录了后台') [ RunTime:0.0014s ]
+SQL: SELECT * FROM `rm_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 1 /Users/ningsk/codes/runmoney/Application/Common/Common/function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Users/ningsk/codes/runmoney/Application/Common/Common/function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1426431138 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `rm_member` [ RunTime:0.0013s ]
+SQL: UPDATE `rm_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T22:52:18+08:00 ] ::1 /runmoney/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000677s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_category` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `rm_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `rm_document` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `rm_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1426517538 AND ( deadline = 0 OR deadline > 1426517538 ) ORDER BY `id` DESC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002565s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002630s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001657s ]
+
+[ 2015-03-16T22:52:18+08:00 ] ::1 /runmoney/Index/ranklist?callback=rm_callback_1013_1426517538691&type=all&_=1426517538651
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000727s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T22:52:18+08:00 ] ::1 /runmoney/Index/topic?callback=rm_callback_45119_1426517538686&type=&lastid=0&_=1426517538650
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001314s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T22:52:21+08:00 ] ::1 /runmoney/Index/comment?callback=rm_callback_7551_1426517541156&tid=1&_=1426517538652
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000670s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:00:42+08:00 ] ::1 /runmoney/Center/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0045s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( author_id = 1 AND status != 99 ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 217 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 238 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 280 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 280 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 280 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/bfdd07c02654947f6fcf24e6c9b14621.php 第 280 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2015-03-16T23:00:44+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2015-03-16T23:03:38+08:00 ] ::1 /runmoney/Center/cart/movetocollect/movetocollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0042s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+ERR: 参数错误或者未定义:subact
+
+[ 2015-03-16T23:03:57+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:04:34+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0144s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:04:41+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect?ids=1,2,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:05:16+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:05:18+08:00 ] ::1 /runmoney/Center/cart/movetocollect/movetocollect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000711s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2015-03-16T23:05:28+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003423s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0067s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2015-03-16T23:05:31+08:00 ] ::1 /runmoney/Topic/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000661s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_topic` WHERE `status` <> 99 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`thumb`,`gold_price`,`description`,`parameter`,`stocks`,`pictures`,`remark`,`author_id`,`status`,`update_time`,`create_time` FROM `rm_topic` WHERE `status` <> 99 ORDER BY create_time asc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001474s ]
+
+[ 2015-03-16T23:05:33+08:00 ] ::1 /runmoney/Topic/index/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0030s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=5 AND status<>99 ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2015-03-16T23:05:33+08:00 ] ::1 /runmoney/Topic/comment?callback=rm_callback_73458_1426518333648&tid=5&type=0&p=1&cnt=10&_=1426518333597
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001369s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0073s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:05:35+08:00 ] ::1 /runmoney/Topic/collect?callback=rm_callback_61755_1426518335740&tid=5&_=1426518333598
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000647s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=5 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 AND topic_id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `rm_collect` (`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`add_time`) VALUES ('5','1','ninstein','新能源','/Uploads/Picture/150306/54f9b3cdc1130.png','0','1','1426518335') [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:05:38+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000685s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2015-03-16T23:13:48+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1,2,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002798s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+
+[ 2015-03-16T23:14:05+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1,2,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002396s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0034s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 44 行.
+
+[ 2015-03-16T23:14:13+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001614s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+
+[ 2015-03-16T23:14:48+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002934s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0035s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+
+[ 2015-03-16T23:14:53+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1,2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000949s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0077s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 44 行.
+
+[ 2015-03-16T23:14:56+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000666s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+
+[ 2015-03-16T23:15:02+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1,2,,,,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000662s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 44 行.
+
+[ 2015-03-16T23:15:17+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002352s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 44 行.
+
+[ 2015-03-16T23:23:55+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002769s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0083s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0090s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0035s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:24:09+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1,2,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001549s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0012s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=2 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:24:23+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1,2,3,,,4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0034s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=2 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 44 行.
+
+[ 2015-03-16T23:24:54+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1,2,3,4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002383s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0037s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0018s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=2 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=4 ) [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0064s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:25:26+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1,2,3,4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002190s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0020s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=2 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0012s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=4 ) [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:25:27+08:00 ] ::1 /runmoney/Center/cart/subact/remove?ids=1,2,3,4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000679s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0012s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=2 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=4 ) [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:33:35+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003698s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0056s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2015-03-16T23:33:39+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000963s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0072s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2015-03-16T23:33:41+08:00 ] ::1 /runmoney/Topic/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000700s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_topic` WHERE `status` <> 99 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`thumb`,`gold_price`,`description`,`parameter`,`stocks`,`pictures`,`remark`,`author_id`,`status`,`update_time`,`create_time` FROM `rm_topic` WHERE `status` <> 99 ORDER BY create_time asc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2015-03-16T23:33:43+08:00 ] ::1 /runmoney/Topic/index/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000675s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=4 AND status<>99 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2015-03-16T23:33:43+08:00 ] ::1 /runmoney/Topic/comment?callback=rm_callback_61919_1426520023544&tid=4&type=0&p=1&cnt=10&_=1426520023525
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000806s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:33:44+08:00 ] ::1 /runmoney/Topic/addcart?callback=rm_callback_38439_1426520024574&tid=4&_=1426520023526
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000652s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=4 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `rm_cart` (`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`add_time`) VALUES ('4','1','ninstein','新能源','/Uploads/Picture/150306/54f9b3cdc1130.png','0','1','1426520024') [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:33:47+08:00 ] ::1 /runmoney/Topic/index/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000771s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=6 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2015-03-16T23:33:47+08:00 ] ::1 /runmoney/Topic/comment?callback=rm_callback_33253_1426520027291&tid=6&type=0&p=1&cnt=10&_=1426520027281
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000939s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0037s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:33:48+08:00 ] ::1 /runmoney/Topic/addcart?callback=rm_callback_60946_1426520028263&tid=6&_=1426520027282
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000702s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=6 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=6 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: INSERT INTO `rm_cart` (`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`add_time`) VALUES ('6','1','ninstein','新能源','/Uploads/Picture/150306/54f9b3cdc1130.png','0','1','1426520028') [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:33:50+08:00 ] ::1 /runmoney/Topic/index/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000683s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=7 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-03-16T23:33:50+08:00 ] ::1 /runmoney/Topic/comment?callback=rm_callback_17854_1426520030428&tid=7&type=0&p=1&cnt=10&_=1426520030422
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000715s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0036s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:33:51+08:00 ] ::1 /runmoney/Topic/addcart?callback=rm_callback_72149_1426520031408&tid=7&_=1426520030423
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000639s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=7 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `rm_cart` (`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`add_time`) VALUES ('7','1','ninstein','新能源','/Uploads/Picture/150306/54f9b3cdc1130.png','33','1','1426520031') [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:33:55+08:00 ] ::1 /runmoney/Topic/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000717s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_topic` WHERE `status` <> 99 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`thumb`,`gold_price`,`description`,`parameter`,`stocks`,`pictures`,`remark`,`author_id`,`status`,`update_time`,`create_time` FROM `rm_topic` WHERE `status` <> 99 ORDER BY create_time asc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2015-03-16T23:33:56+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2015-03-16T23:34:05+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2015-03-16T23:34:37+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect?ids=1,2,3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=1 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 44 行.
+
+[ 2015-03-16T23:34:44+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect?ids=1,2,3&callback=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001338s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=1 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 44 行.
+
+[ 2015-03-16T23:35:22+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect?ids=1,2,3&callback=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002599s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0009s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=1 AND status<>99 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=2 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=2 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=3 AND status<>99 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:35:31+08:00 ] ::1 /runmoney/Topic/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000646s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_topic` WHERE `status` <> 99 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`thumb`,`gold_price`,`description`,`parameter`,`stocks`,`pictures`,`remark`,`author_id`,`status`,`update_time`,`create_time` FROM `rm_topic` WHERE `status` <> 99 ORDER BY create_time asc LIMIT 0,10   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2015-03-16T23:35:34+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000754s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0128s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2015-03-16T23:35:37+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000692s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2015-03-16T23:35:40+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect?ids=1,2,3&callback=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000948s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0013s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=1 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=2 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=2 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=3 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:36:13+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2015-03-16T23:36:21+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect?ids=1,2,3,,6&callback=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000997s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0015s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=1 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=2 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=2 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=3 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 44 行.
+
+[ 2015-03-16T23:36:25+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect?ids=1,2,3,6&callback=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000660s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0010s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=1 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=2 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=2 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=3 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=6 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=6 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 AND topic_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `rm_collect` (`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`add_time`) VALUES ('6','1','ninstein','新能源','/Uploads/Picture/150306/54f9b3cdc1130.png','0','1','1426520185') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-03-16T23:37:18+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect?ids=1,2,3,6&callback=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0022s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=1 AND status<>99 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=2 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=2 AND status<>99 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=3 AND status<>99 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=6 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=6 AND status<>99 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 AND topic_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:37:23+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000723s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2015-03-16T23:37:58+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2015-03-16T23:38:07+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect?ids=1,4,3,6&callback=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001293s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0034s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0128s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=1 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=4 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=4 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 AND topic_id=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `rm_collect` (`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`add_time`) VALUES ('4','1','ninstein','新能源','/Uploads/Picture/150306/54f9b3cdc1130.png','0','1','1426520287') [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=3 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=3 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=6 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=6 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 AND topic_id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:38:12+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000950s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2015-03-16T23:38:19+08:00 ] ::1 /runmoney/Center/bill.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000701s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: _page /Users/ningsk/codes/runmoney/Runtime/Cache/Home/c909503d22234e2bf2a53076fca9e041.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2015-03-16T23:39:06+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002356s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2015-03-16T23:39:08+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000697s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2015-03-16T23:39:10+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000678s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2015-03-16T23:39:31+08:00 ] ::1 /runmoney/Topic/delcollect?callback=rm_callback_31830_1426520370993&tid=6&_=1426520350764
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003400s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0027s ]
+SQL: DELETE FROM `rm_collect` WHERE ( user_id = 1 AND topic_id=6 ) [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:39:31+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001564s ]
+
+[ 2015-03-16T23:39:32+08:00 ] ::1 /runmoney/Topic/delcollect?callback=rm_callback_94397_1426520372303&tid=5&_=1426520371357
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0022s ]
+SQL: DELETE FROM `rm_collect` WHERE ( user_id = 1 AND topic_id=5 ) [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:39:32+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000723s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000253s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2015-03-16T23:39:33+08:00 ] ::1 /runmoney/Topic/delcollect?callback=rm_callback_82502_1426520373457&tid=4&_=1426520372566
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001603s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0031s ]
+SQL: DELETE FROM `rm_collect` WHERE ( user_id = 1 AND topic_id=4 ) [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:39:33+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000658s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2015-03-16T23:39:35+08:00 ] ::1 /runmoney/Topic/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_topic` WHERE `status` <> 99 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`thumb`,`gold_price`,`description`,`parameter`,`stocks`,`pictures`,`remark`,`author_id`,`status`,`update_time`,`create_time` FROM `rm_topic` WHERE `status` <> 99 ORDER BY create_time asc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2015-03-16T23:39:36+08:00 ] ::1 /runmoney/Topic/index/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000677s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=5 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2015-03-16T23:39:37+08:00 ] ::1 /runmoney/Topic/comment?callback=rm_callback_18148_1426520377030&tid=5&type=0&p=1&cnt=10&_=1426520377020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:39:38+08:00 ] ::1 /runmoney/Topic/addcart?callback=rm_callback_47043_1426520378867&tid=5&_=1426520377021
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000868s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=5 AND status<>99 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: INSERT INTO `rm_cart` (`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`add_time`) VALUES ('5','1','ninstein','新能源','/Uploads/Picture/150306/54f9b3cdc1130.png','0','1','1426520378') [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:39:43+08:00 ] ::1 /runmoney/Topic/index/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000704s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0039s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=7 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2015-03-16T23:39:44+08:00 ] ::1 /runmoney/Topic/comment?callback=rm_callback_99545_1426520384003&tid=7&type=0&p=1&cnt=10&_=1426520383996
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000727s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:39:45+08:00 ] ::1 /runmoney/Topic/addcart?callback=rm_callback_59299_1426520385110&tid=7&_=1426520383997
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000804s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=7 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 44 行.
+
+[ 2015-03-16T23:39:49+08:00 ] ::1 /runmoney/Topic/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000687s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_topic` WHERE `status` <> 99 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`thumb`,`gold_price`,`description`,`parameter`,`stocks`,`pictures`,`remark`,`author_id`,`status`,`update_time`,`create_time` FROM `rm_topic` WHERE `status` <> 99 ORDER BY create_time asc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 171 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/34af08002141c5ebe63d6374070b2c12.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2015-03-16T23:39:50+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/44bb21f8411c29799077183c48aa1864.php 第 169 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2015-03-16T23:40:03+08:00 ] ::1 /runmoney/Center/cart/subact/movetocollect?ids=1,5,7&callback=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002780s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0018s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=1 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_topic` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=1 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=5 ) [ RunTime:0.0001s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=5 AND status<>99 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 AND topic_id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `rm_collect` (`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`add_time`) VALUES ('5','1','ninstein','新能源','/Uploads/Picture/150306/54f9b3cdc1130.png','0','1','1426520403') [ RunTime:0.0002s ]
+SQL: DELETE FROM `rm_cart` WHERE ( user_id = 1 AND topic_id=7 ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `rm_topic` WHERE ( id=7 AND status<>99 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 AND topic_id=7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `rm_collect` (`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`add_time`) VALUES ('7','1','ninstein','新能源','/Uploads/Picture/150306/54f9b3cdc1130.png','33','1','1426520403') [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_cart` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant JSONP - assumed 'JSONP' /Users/ningsk/codes/runmoney/Application/Home/Controller/HomeController.class.php 第 49 行.
+
+[ 2015-03-16T23:40:07+08:00 ] ::1 /runmoney/Center/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000720s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `rm_cart` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `rm_cart` WHERE `user_id` = '1' ORDER BY add_time desc LIMIT 1000   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2015-03-16T23:40:10+08:00 ] ::1 /runmoney/Center/collect.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [2048] Declaration of Home\Controller\CenterController::theme() should be compatible with Think\Controller::theme($theme) /Users/ningsk/codes/runmoney/Application/Home/Controller/CenterController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `rm_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `rm_config` WHERE `status` = 1  [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `rm_collect` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rm_collect` WHERE `user_id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`topic_id`,`author_id`,`author_nick`,`title`,`thumb`,`gold_price`,`user_id`,`status`,`add_time` FROM `rm_collect` WHERE `user_id` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Users/ningsk/codes/runmoney/Runtime/Cache/Home/a5de38bfd45ab45c177a3dfe59a1d037.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+

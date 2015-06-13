@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+body{
+	background-color: #f0f0f0;
+}
+.wrap
+{
+	width:995px;
+	margin: 0 auto;
+}
+.main_content{
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+
+/* 表单通用样式 start */
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    padding: 7px 9px;
+    line-height: 20px;
+    resize: none;
+    border: 1px solid #ddd;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    border-color: #51a7e8;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075),0 0 5px rgba(81,167,232,0.5);
+    background-color: #fff!important;
+}
+/* 表单通用样式 end */
+
+/*左侧 start*/
+.left_ct{
+    width: 220px;
+    float: left;
+    min-height: 800px;
+}
+
+.mod_search{
+	border: 1px solid #dcdcdc;
+    border-top: 2px solid #ea534a;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+.mod_search .search_title{
+	height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #dcdcdc;
+	padding: 0 15px;
+}
+.mod_search .search_title h3{
+	font-size: 16px;
+	font-weight: normal;
+	display: inline;
+	margin-right: 10px;
+}
+.mod_search .search_title .tip{
+	color: #999;
+}
+.mod_search .search_cnt{
+	padding: 12px;
+}
+.mod_search .search_form{
+	position: relative;
+}
+.mod_search .search_input{
+    width: 174px;
+
+}
+.mod_search .search_submit{
+	width: 20px;
+    height: 20px;
+    background: url(image/sprite_theme.png) 0 0 no-repeat;
+    position: absolute;
+	right: 5px;
+	top: 7px;
+	border: 0 none;
+}
+
+.mod_category{
+    border: 1px solid #dcdcdc;
+    border-top: 2px solid #ea534a;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 0 12px;
+}
+.mod_category .category_component{
+	border-bottom: 1px solid #dcdcdc;
+	padding: 10px 0;
+}
+.mod_category .category_component.last{
+    border-bottom: 0 none;
+}
+.mod_category .category_component .category_title{
+	font-size: 12px;
+    line-height: 30px;
+	padding-left: 3px;
+}
+.mod_category .category_component li{
+
+}
+.mod_category .category_component .category_item{
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    padding: 0 5px;
+    padding-left: 20px;
+}
+.mod_category .category_component .category_item:hover{
+    color: #ea534a;
+    background-color: #f7f7f7;
+}
+.mod_category .category_component .category_item.selected{
+    color: #ea534a;
+    font-weight: bold;
+}
+/* 左侧 end*/
+
+/* 右侧 start */
+.right_ct{
+    margin-left: 240px;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+}
+.mod_detail{
+	padding: 0 30px;
+}
+.mod_detail a{
+    color: #333;
+}
+.mod_detail a:hover{
+    color: #000;
+}
+.mod_detail .mod_title{
+	margin-bottom: 15px;
+    position: relative;
+}
+.mod_detail .mod_title h3{
+	display: inline-block;
+	font-weight: normal;
+	font-size: 14px;
+	padding-right: 20px;
+	border-left: 3px solid #ea544b;
+	padding-left: 8px;
+	line-height: 20px;
+	zoom: 1;
+    *display: inline;
+}
+.mod_detail .mod_title .mod_page{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+}
+.mod_detail .mod_title .filter{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.mod_detail .mod_title .filter li{
+	display: inline;
+}
+
+.mod_table{
+    width: 100%;
+    line-height: 20px;
+    border: 1px solid #e8eaeb;
+}
+.mod_table thead th{
+    background-color: #f5f5f5;
+    color: #949494;
+    padding: 10px 8px;
+    text-align: center;
+}
+.mod_table td{
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px dashed #e8eaeb;
+    color: #666;
+}
+.mod_table .col_select{
+	width: 50px;
+}
+.mod_table .col_theme{
+    width: 180px;
+}
+.mod_table .col_profit{
+    width: 80px;
+}
+
+/* 排名列表 start */
+.table_theme_rank{}
+.table_theme_rank .ico{
+    background: url(image/sprite_theme.png) no-repeat;
+    padding-right: 20px;
+}
+.table_theme_rank .ico_arrow_down{
+    background-position: right -71px;
+}
+.table_theme_rank .ico_arrow_down_active{
+    background-position: right -31px;
+}
+.table_theme_rank .ico_arrow_up{
+    background-position: right -151px;
+}
+.table_theme_rank .ico_arrow_up_active{
+    background-position: right -111px;
+}
+.table_theme_rank .theme_photo{
+    display: block;
+    float: left;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #e6e6e6;
+}
+.table_theme_rank .theme_photo img{
+    width: 80px;
+    height: 80px;
+}
+.table_theme_rank .theme_info{
+	margin-left: 90px;
+	text-align: left;
+}
+/* 排名列表 end */
+
+/* 我发布的主题 start */
+.mod_detail .detail_theme{
+	padding: 30px 0;
+}
+/* 我发布的主题 end */
+
+/* 分页 start */
+.mod_page{
+    overflow: hidden;
+    padding: 20px 0 0;
+}
+.mod_page .pages{
+    float: right;
+}
+.mod_page .pages li{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    *margin: 0 1px;
+}
+.mod_page .pages li a{
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #e8eaeb;
+    padding: 0 5px;
+    color: #333;
+}
+.mod_page .pages li .current{
+    color: #2b66a0;
+}
+/* 分页 end */
+
+
+
+
+

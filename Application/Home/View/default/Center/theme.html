@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>金融炼金术 个人中心 创建或发布</title>
+    <link href="__PUBLIC__/V1/css/global.css" rel="stylesheet" media="screen" />
+    <link href="__PUBLIC__/V1/css/space.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+    <include file='Public/header' />
+    <!-- 内容 start -->
+    <div class="main_content">
+        <div class="wrap clear">
+            <include file='Public/centerSide' />
+
+            <!-- 右边 start -->
+            <div class="main">
+                <div class="mod_detail">
+                    <div class="detail_theme">
+                        <if condition="$_total eq 0 ">
+                            <div class="mod_empty">
+                                <div class="ico_warn"></div>
+                                <p class="tip_cnt">还没有创建任何主题？您可以逛逛热门主题哈！</p>
+                                <p><a href="{:U('Topic/list')}" class="btn btn_red">去看看</a> <a href="{:U('Topic/create')}" class="btn btn_red">新建主题</a></p>
+                            </div>
+                        <else/>
+                        <div class="mod_title">
+                            <h3>我发布的主题</h3>
+                            <a href="{:U('Topic/create')}" class="btn_add">新建主题</a>
+                        </div>
+                        <table class="mod_table">
+                            <thead>
+                            <tr>
+                                <th class="col_theme">主题策略（股票） </th>
+                                <th class="col_date">发布日期</th>
+                                <th class="col_fund">配置资金</th>
+                                <th class="col_profit">跟投人气</th>
+                                <th>最新评论</th>
+                                <th class="col_handle">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="topics" item="topic">
+                                <tr data-tid="{$topic.id}" class="topic_tr">
+                                    <td>
+                                        <p><a href="{:U('Topic/index', array(id=>$topic['id']))}" target="_blank">{$topic.title}</a></p>
+                                    </td>
+                                    <td>{$topic.create_time|date='Y-m-d',###}</td>
+                                    <td>1万元</td>
+                                    <td>6万人</td>
+                                    <td>
+                                        <p class="comment">很好很强大！上入市的菜鸟...</p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn_red">买入</a>
+                                        <a href="#" class="btn btn_gray_2">卖出</a>
+                                        <a href="#" class="btn btn_delete">删除</a>
+                                    </td>
+                                </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+                        <div class="mod_page">
+                            {$_page}
+                        </div>
+                        </if>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边 end -->
+        </div>
+    </div>
+    <!-- 内容 end -->
+
+    <include file='Public/footer' />
+    <script type="text/javascript" src="__PUBLIC__/V1/js/center/theme.js"></script>
+
+</body>
+</html>

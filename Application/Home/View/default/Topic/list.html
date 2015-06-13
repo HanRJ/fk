@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>金融炼金术 主题排名</title>
+    <link href="__PUBLIC__/V1/css/global.css" rel="stylesheet" media="screen" />
+    <link href="__PUBLIC__/V1/css/theme.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+<include file='Public/header' />
+    <!-- 内容 start -->
+    <div class="main_content">
+        <div class="wrap clear">
+            <!-- 左边 start -->
+            <div class="left_ct">
+                <div class="mod_search">
+                    <div class="search_title"><h3>炼金场</h3><span class="tip">发现你的投资兴趣</span></div>
+                    <div class="search_cnt">
+                        <form class="search_form">
+                            <input type="text" class="search_input" />
+                            <input type="submit" class="search_submit" value=""/>
+                        </form>
+                    </div>
+                </div>
+                <div class="mod_category">
+                    <div class="category_component">
+                        <h3 class="category_title">投资类型</h3>
+                        <ul>
+                            <li><a href="##" class="category_item selected">全部</a></li>
+                            <li><a href="##" class="category_item">委员会推荐</a></li>
+                            <li><a href="##" class="category_item">限时免费</a></li>
+                            <li><a href="##" class="category_item">概念</a></li>
+                            <li><a href="##" class="category_item">地域</a></li>
+                        </ul>
+                    </div>
+                    <div class="category_component">
+                        <h3 class="category_title">投资金额</h3>
+                        <ul>
+                            <li><a href="##" class="category_item selected">全部</a></li>
+                            <li><a href="##" class="category_item">1万以下</a></li>
+                            <li><a href="##" class="category_item">1-5万</a></li>
+                            <li><a href="##" class="category_item">5-10万</a></li>
+                            <li><a href="##" class="category_item">10万以上</a></li>
+                        </ul>
+                    </div>
+                    <div class="category_component last">
+                        <h3 class="category_title">投资风格</h3>
+                        <ul>
+                            <li><a href="##" class="category_item selected">全部</a></li>
+                            <li><a href="##" class="category_item">金</a></li>
+                            <li><a href="##" class="category_item">木</a></li>
+                            <li><a href="##" class="category_item">水</a></li>
+                            <li><a href="##" class="category_item">火</a></li>
+                            <li><a href="##" class="category_item">风</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 左边 end -->
+            <!-- 右边 start -->
+            <div class="right_ct">
+                <div class="mod_detail">
+                    <div class="detail_theme">
+                        <div class="mod_title">
+                            <div class="mod_page">
+                                {$_page}
+                            </div>
+                            <h3>所有主题（{$_total}）</h3>
+                            <ul class="filter">
+                                <li><a href="##">最新</a></li> |
+                                <li><a href="##">最热</a></li>
+                            </ul>
+                        </div>
+                        <table class="mod_table table_theme_rank">
+                            <thead>
+                            <tr>
+                                <th class="col_theme">主题名称 </th>
+                                <th class="col_profit"><a href="##" class="ico ico_arrow_down_active">当月收益率</a></th>
+                                <th class="col_profit"><a href="##" class="ico ico_arrow_down">实盘收益率</a></th>
+                                <th class="col_profit"><a href="##" class="ico ico_arrow_up_active">昨日收益率</a></th>
+                                <th class="col_price">策略价格</th>
+                                <th class="col_history">历史业绩</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <foreach name="topics" item="topic">
+                            <tr>
+                                <td>
+                                    <a href="{:U('Topic/index', array(id=>$topic['id']))}" target="_blank" class="theme_photo">
+                                        <img style="" src="__APP__{$topic['thumb']}">
+                                    </a>
+                                    <div class="theme_info">
+                                        <a href="{:U('Topic/index', array(id=>$topic['id']))}" target="_blank" class="theme_title">{$topic['title']}</a>
+                                        <p class="theme_pub">
+                                            发布：{:get_nickname($topic['author_id'])}<br />2万人购买
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong>10.29％</strong>
+                                </td>
+                                <td>50.29％</td>
+                                <td>2.29％</td>
+                                <td>{$topic['gold_price']}金币</td>
+                                <td><img src="__PUBLIC__/V1/image/theme_chart.png"/></td>
+                            </tr>
+                            </foreach>
+                            </tbody>
+                        </table>
+
+                        <div class="mod_page">
+                            {$_page}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边 end -->
+        </div>
+    </div>
+    <!-- 内容 end -->
+    <include file='Public/footer' />
+</body>
+</html>

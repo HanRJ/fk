@@ -1,0 +1,41 @@
+<!-- 左边 start -->
+<div class="aside">
+    <div class="mod_user">
+        <a href="{:U('Center/setting')}" class="photo"><img src="__PUBLIC__/V1/image/photo_default.png"></a>
+        <div class="user_info">
+            <p class="user_name"><a href="##" class="link link_edit">编辑</a><span href="##" class="name">{:session('user_auth.username')}</span></p>
+            <p class="user_status">炼金大师</p>
+        </div>
+        <div class="user_cert">
+            <label>认证：</label>
+            <ul>
+                <li class="item item_autonym item_selected">实名认证</li>
+                <li class="item item_phone">手机认证</li>
+                <li class="item item_card item_selected">行用卡认证</li>
+                <li class="item item_email">邮箱认证</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mod_user_detail">
+        <ul>
+            <li class="item item_secure">安全等级：<i>低</i></li>
+            <li class="item item_prize"><i>邀请有礼</i></li>
+            <li class="item item_dollar">金币：<i>20</i><a href="##" class="btn btn_red">充值</a></li>
+        </ul>
+    </div>
+    <div class="mod_menu">
+        <ul class="menu_group">
+            <li><a href="{:U('Center/index')}" class="menu_item <if condition="ACTION_NAME eq 'index'">menu_item_selected</if>">我的账户</a></li>
+            <li><a href="{:U('Center/cart')}" class="menu_item menu_item_cart <if condition="ACTION_NAME eq 'cart'">menu_item_selected</if>">我的购物车 <span class="count">（<i><?=session('cart_cnt')?session('cart_cnt'):'0' ?></i>）</span></a></li>
+            <li><a href="{:U('Center/bill')}" class="menu_item <if condition="ACTION_NAME eq 'bill'">menu_item_selected</if>">我的订单 <span class="count">（<i>1</i>）</span></a></li>
+            <li><a href="{:U('Center/collect')}" class="menu_item <if condition="ACTION_NAME eq 'collect'">menu_item_selected</if>">我的收藏 <span class="count">（<i><?=session('collect_cnt')?session('collect_cnt'):'0' ?></i>）</span></a></li>
+            <li><a href="{:U('Center/invest')}" class="menu_item <if condition="ACTION_NAME eq 'invest'">menu_item_selected</if>">我投资的主题 <span class="count">（<i>4</i>）</span></a></li>
+            <li><a href="{:U('Center/theme')}" class="menu_item <if condition="ACTION_NAME eq 'theme'">menu_item_selected</if>">创建或发布 <span class="count">（<i>1</i>）</span></a></li>
+        </ul>
+        <ul>
+            <li><a href="{:U('Center/setting')}" class="menu_item <if condition="ACTION_NAME eq 'setting'">menu_item_selected</if>">账户设置</a></li>
+            <li><a href="{:U('Center/message')}" class="menu_item <if condition="ACTION_NAME eq 'message'">menu_item_selected</if>">我的私信</a></li>
+        </ul>
+    </div>
+</div>
+<!-- 左边 end -->

@@ -1,0 +1,10 @@
+[ 2015-01-04T22:27:20+08:00 ] ::1 /runmoney/index.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000549s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006468s ]
+ERR: SQLSTATE[HY000] [2002] No such file or directory
+
